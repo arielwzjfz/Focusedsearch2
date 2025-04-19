@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+    position: relative;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.search-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #666;
+}
+
+.platform-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
+}
+
+.platform-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: transform 0.3s, background-color 0.3s;
+    color: white;
+    justify-content: center;
+}
+
+.platform-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.youtube {
+    background-color: #ff0000;
+}
+
+.youtube:hover {
+    background-color: #cc0000;
+    transform: translateY(-2px);
+}
+
+.xiaohongshu {
+    background-color: #ff2442;
+}
+
+.xiaohongshu:hover {
+    background-color: #e61e3c;
+    transform: translateY(-2px);
+}
+
+.bilibili {
+    background-color: #00a1d6;
+}
+
+.bilibili:hover {
+    background-color: #0088b3;
+    transform: translateY(-2px);
+}
+
+.tiktok {
+    background-color: #000000;
+}
+
+.tiktok:hover {
+    background-color: #333333;
+    transform: translateY(-2px);
+}
+
+.puppy-decoration {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index: 0;
+}
+
+.top-left {
+    top: -50px;
+    left: -50px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.bottom-right {
+    bottom: -50px;
+    right: -50px;
+    animation: float 3s ease-in-out infinite reverse;
+}
+
+.puppy-svg {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-10px) rotate(5deg);
+    }
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+} 
